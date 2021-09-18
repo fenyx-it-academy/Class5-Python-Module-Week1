@@ -1,0 +1,81 @@
+### Tas kagit makas programi yazmaya calistim
+#### Kullanicidan bu seceneklerden birini aliyoruz 
+#####Bilgisayara karsi bir cevap almaya calisiyoruz
+######Cevaplara gore bir puanlama olusturduk
+
+
+import random
+
+input("Welcome to Rock, Paper,  Scissors! Press enter to start. ")
+
+user_score=0                #kullanici skorunu belirtir
+cpu_score=0                 # vilgisayarin skorunu belirtir
+
+
+
+while True:
+    print()
+    user_choice = input("Rock, Paper, or Scissors?").lower()  # seceneklerden birini yazmasini istiyoruz.
+    while user_choice != "rock" and user_choice!="paper" and user_choice!="scissors":
+        user_choice=input("Invalid input, please try again: ").lower()
+
+    random_num=random.randint(0,2)  #bilgisayardan randint fonk ile bu aralikta rastgele tam sayi atamasini istiyoruz.
+    if random_num == 0:                 #bu sayilari kullanicidan bekledigimiz cevaplara tanimliyoruz.
+        cpu_choice="rock"
+    elif random_num == 1:
+        cpu_choice="paper"
+    elif random_num == 2:
+        cpu_choice="scissors"
+
+
+    print()
+    print("Your choice : ", user_choice)
+    print("Computer's choice : ", cpu_choice)
+    print()
+
+
+    if user_choice=="rock":                 #kosul blogu ile olasi durumlari siralayip puanlamayi ayarliyoruz
+        if cpu_choice== "rock":
+            print("It's a tie!")
+        elif cpu_choice== "paper":
+            print("You lost")
+            cpu_score += 1
+        elif cpu_choice== "scissors":
+            print("You win")
+            user_score+=1
+    elif user_choice=="paper":
+        if cpu_choice== "paper":
+            print("It's a tie!")
+        elif cpu_choice== "scissors":
+            print("You lost")
+            cpu_score+=1
+        elif cpu_choice== "rock":
+            print("You win")
+            user_score+=1
+    elif user_choice=="scissors":
+        if cpu_choice== "scissors":
+            print("It's a tie!")
+        elif cpu_choice== "rock":
+            print("You lost")
+            cpu_score+=1
+        elif cpu_choice== "paper":
+            print("You win")
+            user_score+=1
+            
+    print()
+    print("You have ", user_score, " wins")                 #kullanici ve pc skorlarini yazdirdik
+    print("Computer have ", cpu_score, " wins")
+    print()
+
+    repeat= input("Play Again? (Y/N)").lower()              #kullanicinin donguyu basa almak isteyip istemedigini soruyoruz
+    while repeat != "n" and repeat != "y":
+        repeat=input("Invalid input, please try again:").lower()
+
+    repeat= input("Play Again? (Y/N)").lower
+    while repeat != "n" and repeat != "y":
+        repeat=input("Invalid input, please try again:").lower()   #gecersiz bir komut varsa kullanicinin duzeltmesini istiyoruz
+
+    if repeat =="n":
+        break                               # donguyu sonlandiriyoruz
+    
+    print("\n.................\n ")
