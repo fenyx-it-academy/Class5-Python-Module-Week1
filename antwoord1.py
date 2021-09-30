@@ -14,3 +14,4 @@ print('eerte antwoord')
 # git commit -m "2.haftanin odevlerini icerir"
 # git status
 # git push -u origin main
+#Contribute -> open pull request
