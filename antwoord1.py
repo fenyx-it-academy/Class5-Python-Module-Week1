@@ -1,4 +1,4 @@
-print('eerte antwoord')
+print('eerste antwoord')
 #click <fork>
 # go to your <repositories>page
 #click and open the file 
