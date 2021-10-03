@@ -1,6 +1,6 @@
-<!-- * 1-Rock-Paper-Scissors
-* Oyuncularin adlarini alip tas - kagit - makas oyunu oynatiniz.
-* Oyun 10 el surecektir. 10 el sonunda kazanan belli olacaktir. Skor sonucta gosterilecektir. -->
+# <!-- * 1-Rock-Paper-Scissors
+# * Oyuncularin adlarini alip tas - kagit - makas oyunu oynatiniz.
+# * Oyun 10 el surecektir. 10 el sonunda kazanan belli olacaktir. Skor sonucta gosterilecektir. -->
 count=10
 player1=input("First player name: ")
 player2=input("Second player name: ")
@@ -27,11 +27,11 @@ while count>0:
             print("The game ended.\nDraw \nScore: {} : {}  \n{} : {}".format(player1,player1_count,player2,player2_count))
         else:
             print("The game ended.\n{} won \nScore: {} : {}  \n{} : {}".format(player2,player1,player1_count,player2,player2_count))
-<!-- * 2- Ders Puani Hesaplama
-* Kullanıcıdan Adi, Soyadi, Ogrenci Numarasi, 4 ders adi, bu derslerin Vize ve Final notlari istenecektir.
-* Vize notunun % 40′ı ile Final Notunun %60′ınin toplamı yil sonu ortalamasini verecektir.
-* Ortalama 50‘den küçükse ekranda “KALDI“, 50 ve üstüyse ekranda “GEÇTİ” yazdırılacaktır.
-* Bu yazdirma islemi 4 ders icinde yapilacak ve dersler alt alta yazdirilacaktir. -->
+# <!-- * 2- Ders Puani Hesaplama
+# * Kullanıcıdan Adi, Soyadi, Ogrenci Numarasi, 4 ders adi, bu derslerin Vize ve Final notlari istenecektir.
+# * Vize notunun % 40′ı ile Final Notunun %60′ınin toplamı yil sonu ortalamasini verecektir.
+# * Ortalama 50‘den küçükse ekranda “KALDI“, 50 ve üstüyse ekranda “GEÇTİ” yazdırılacaktır.
+# * Bu yazdirma islemi 4 ders icinde yapilacak ve dersler alt alta yazdirilacaktir. -->
 students_informations=[input("Ogrencinin adi: "),input("Ogrencinin soyadi: "),input("Ogrencinin numarasi: ")]
 subject_1=[input("Ders adi: "),int(input("Vize puani: ")),int(input("Final puani: "))]
 subject_2=[input("Ders adi: "),int(input("Vize puani: ")),int(input("Final puani: "))]
@@ -43,12 +43,12 @@ for i in [subject_1,subject_2,subject_3,subject_4]:
         print("{} numarali ogrenci {} dersinden {} puan ile gecti.".format(students_informations[2],i[0],point))
     else:
         print("{} numarali ogrenci {} dersinden {} puan ile kaldi.".format(students_informations[2],i[0],point))
-<!-- * 3- Beden Kitle Indeksi Hesaplama
-* Bir kisinin ağırlığının, boyuna göre normal olup olmadığını gösteren parametreye Beden Kitle İndeksi denir.
-* Kısaca insanın kilosunu kişinin boy uzunluğunun karesine bölersek beden kitle indeksi ortaya çıkar.
-* Kullanıcıdan kilo ve boy uzunluğunu alip çıkan sonuç 25'in altindaysa NORMAL,
-* 25-30 arasında ise FAZLA KİLOLU, 30-40 arasında ise OBEZ,
-* 40 ve üzerinde ise AŞIRI ŞİŞMAN şeklinde uyarı yazdiriniz. -->
+# <!-- * 3- Beden Kitle Indeksi Hesaplama
+# * Bir kisinin ağırlığının, boyuna göre normal olup olmadığını gösteren parametreye Beden Kitle İndeksi denir.
+# * Kısaca insanın kilosunu kişinin boy uzunluğunun karesine bölersek beden kitle indeksi ortaya çıkar.
+# * Kullanıcıdan kilo ve boy uzunluğunu alip çıkan sonuç 25'in altindaysa NORMAL,
+# * 25-30 arasında ise FAZLA KİLOLU, 30-40 arasında ise OBEZ,
+# * 40 ve üzerinde ise AŞIRI ŞİŞMAN şeklinde uyarı yazdiriniz. -->
 boy=float(input("Boyunuzu metre cinsinden giriniz: "))
 kg=float(input("Kilonuzu giriniz: "))
 beden_kitle_endeksi=kg/boy**2
@@ -62,7 +62,7 @@ elif 30<beden_kitle_endeksi<=40:
 else:
     print("Beden kitle endeksiniz : {} \nAŞIRI ŞİŞMAN".format(beden_kitle_endeksi))
 
-<!-- HackerRank -->
+# <!-- HackerRank -->
 # Arithmetic Operators
 if __name__ == '__main__':
     a = int(input())
